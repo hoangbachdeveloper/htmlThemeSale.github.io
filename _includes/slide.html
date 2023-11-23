@@ -1,0 +1,24 @@
+<div id="home-slide">
+  <div class="slide">
+    <button class="slide__button slick-arrow slide__button--left " id="home-slide-prev">
+      <i class="fal fa-arrow-alt-left"></i>
+    </button>
+    <button class="slide__button slick-arrow slide__button--right" id="home-slide-next">
+      <i class="fal fa-arrow-alt-right"></i>
+    </button>
+      <div class="slide__inner" id="slide">
+          {% for item in site.data.home-slide %}
+          <div class="slide__item" style="background-image: url({{item.img_path}});">
+                  <div class="slide__box">
+                    <h1>
+                      {{item.title}}
+                    </h1>
+                    <a class="btn btn-fgc btn-fgc--primary" href="#">
+                      Mua ngay
+                    </a>
+                  </div>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+</div>

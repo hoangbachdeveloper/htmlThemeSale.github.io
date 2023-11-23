@@ -1,0 +1,72 @@
+<div class="checkout__cart mb-5">
+  
+    <div class="checkout__toggle">
+        <span>
+            <i class="fal fa-shopping-cart"></i>
+            Tóm tắt đơn hàng
+            <i class="fal fa-angle-down"></i>
+        </span>
+        <p>
+            160.000.000 VNĐ
+        </p>
+    </div>
+    <div class="checkout__cart__inner">
+        <div class="checkout__cart__list">
+            <ul>
+                {% for item in site.data.checkout-cart %}
+                <li>
+                   <div class="checkout__cart__item">
+                    <div class="checkout__cart__wraps" >
+                        <a href="product-details.html" class="checkout__cart__img">
+                            <img src="{{item.img_path}}" alt="{{item.name}}">
+                            <span>1</span>
+                        </a>    
+                        <div class="checkout__cart__info">
+                            <a class="checkout__cart__name" href="product-detail.html">
+                                {{item.name}}
+                            </a>
+                            <span class="checkout__cart__description">
+                                Màu sắc: Trắng, Chất liệu: Kim loại
+                            </span>
+                        </div>
+                    </div>
+                    <div class="checkout__cart__price">
+                        <span>
+                            40.000VND
+                        </span>
+                    </div>
+                   </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="checkout__cart__table">
+            <table>
+                <tr>
+                    <td class="t-left">
+                        Tạm tính
+                    </td>
+                    <td class="t-right">
+                        160.000.000VNĐ
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class="t-left">
+                        Phí vận chuyển
+                    </td>
+                    <td class="t-right">
+                        Miễn phí
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="checkout__cart__total">
+            <span>
+                Tổng tiền
+            </span>
+            <p>
+                160.000.000VNĐ
+            </p>
+        </div>
+    </div>
+</div>

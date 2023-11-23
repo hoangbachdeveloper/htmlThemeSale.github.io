@@ -1,0 +1,172 @@
+---
+layout: post
+title: About
+banner__title: Giới thiệu
+permalink: about.html
+---
+<!-- ABOUT CONTENT BODY START -->
+<div class="about-content__body">
+
+
+    <!-- FGC STORIES START -->
+    <div class="about-content__stories">
+        <div class="container container-modify">
+            <div class="row">
+                <!-- LIST IMG START -->
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="stories__list-img">
+                            {% for item in site.data.about-img %}
+                                <div class="stories__list-img-item">
+                                    <img src="{{item.img_path}}" alt="about-img">
+                                </div>
+                                {% endfor %}
+                            </div>
+                </div>
+                <!-- LIST IMG END -->
+
+                <!-- PARAGRAPH START -->
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="stories__paragraph">
+                        <div class="stories__paragraph-content">
+                            <div class="title">
+                                <h2>
+                                    Câu chuyện về Logitech
+                                </h2>
+                            </div>
+                            <div class="content">
+                                {% for item in site.data.about-paragraph %}
+                                <p>
+                                    {{item.content}}
+                                </p>
+                                {% endfor %}
+                            </div>
+                            <div class="services">
+                                {% for item in site.data.about-services-list%}
+                                    <div class="services-item">
+                                        <img src="assets/images/icon/times.png" alt="img-services">
+                                        <p>
+                                            {{item.text}}
+                                        </p>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PARAGRAPH END -->
+            </div>
+        </div>
+    </div>
+    <!-- FGC STORIES END -->
+
+    <!-- ABOUT CATEGORIES START -->
+    <div class="about-content__categories">
+        <div class="container container-modify">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    
+                    <div class="categories__item">
+                        <h6>
+                            1. Lĩnh vực kinh doanh
+                        </h6>
+                        <div class="categories__item-text">
+                            {% for item in site.data.about-list-categories-text limit: 4 %}
+                            <p>
+                                {{item.text}}
+                            </p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="categories__item">
+                        <h6>
+                            2. Hình thành và phát triển
+                        </h6>
+                        <div class="categories__item-text">
+                            {% for item in site.data.about-list-categories-text offset: 4 limit: 2 %}
+                            <p>
+                                {{item.text}}
+                            </p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="categories__item">
+                        <h6>
+                            3. Mục tiêu phấn đấu của công ty
+                        </h6>
+                        <div class="categories__item-text">
+                            {% for item in site.data.about-list-categories-text offset: 6 limit: 3 %}
+                            <p>
+                                <i class="fal fa-minus"></i>
+                                {{item.text}}
+                            </p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT CATEGORIES END -->
+
+    <!-- ABOUT PARTNER START -->
+    <div class="about-content__partner">
+        <div class="container container-modify">
+            <div class="row">
+                <!-- PARTNER CONTENT START -->
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="partner-desc">
+                        <div class="title">
+                            <h2>
+                                ĐỐi tác của chúng tôi
+                            </h2>
+                        </div>
+                        <div class="content">
+                            {% for item in site.data.about-partner %}
+                            <p>
+                                {{item.text}}
+                            </p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- PARTNER CONTENT END -->
+
+                <!-- PARTNER LOGO START -->
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="partner-logo">
+                        <img src="assets/images/logo/logo-partner.PNG" alt="partner-logo">
+            
+                </div>
+                <!-- PARTNER LOGO END -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT PARTNER END -->
+
+    <!-- ABOUT ACTIVITIES START -->
+    <div class="about-content__active">
+        <div class="container container-modify">
+            <div class="row">
+                <div class="title">
+                    <h2>
+                        Hoạt động của chúng tôi
+                    </h2>
+                </div>
+                {% for item in site.data.about-acti %}
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="active__img">
+                        <img src="{{item.img_path}}" alt="active-img">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+    <!-- ABOUT ACTIVITIES END -->
+
+
+</div>
+<!-- ABOUT CONTENT BODY END -->

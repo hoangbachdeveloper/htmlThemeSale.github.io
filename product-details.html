@@ -1,0 +1,397 @@
+--- 
+layout: post
+title: Product Details
+banner__title: Ghế nằm chỉnh điện
+permalink: product-details.html
+---
+<!-- PRODUCT DETAILS BODY START -->
+<div class="product-content__body">
+    <div class="container container-modify">
+        <!-- PRODUCT DETAILS MAIN CONTENT START -->
+        <div class="row">
+            <!-- PRODUCT IMAGE START -->
+            <div class="col-md-12 col-lg-6 col-xl-6">
+                <div class="product__img">
+                    <div class="product__img-main">
+                        <img alt="product-img" src="assets/images/product/product-main.jpg">
+                    </div>
+                    <div class="product__img-thumb">
+                        <ul>
+                            {% for item in site.data.product-thumb-img %}
+                                <li class="{{item.status}}">
+                                    <img src="{{item.img_path}}" alt="product-thumb">
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT IMAGE END -->
+                                                                                                                                                                                                                                                                        
+            <!-- PRODUCT DESCRIPTION START -->                                                                                                                                                                                                                         <!-- PRODUCT DESCRIPTION START -->
+            <div class="col-md-12 col-lg-6 col-xl-6">
+                <div class="product-description">
+
+                    <div class="product-description__wraps">
+                        <!-- NAME START -->
+                        <div class="title">
+                            <h2 id="product-name">
+                                Ghế nha khoa hkz - 101
+                            </h2>
+                        </div>
+                        <!-- NAME END -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                        <!-- RATE START -->
+                        <div class="rate">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <span>
+                                (24)
+                            </span>
+                        </div>
+                        <!-- RATE END -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!-- PRICE START -->
+                        <div class="price">
+                            <span class="price__old">
+                                180.000đ
+                            </span>
+                            <span class="price__current">
+                                180.000đ
+                            </span>
+                        </div>
+                        <!-- PRICE END -->
+                        
+                        <!-- FORM START -->
+                        <div class="form">
+                            <form action="#" method="get">
+                                <div class="color form__component">
+                                    <div class="title title--left mb-3">
+                                        <h2>
+                                            Màu: <span id="product-color"></span>
+                                        </h2>
+                                    </div>
+                                    <ul>
+                                        {% for item in site.data.filter-color limit: 6 %}
+                                        <li>
+                                            <label class="product__color" for="{{item.color}}" title="{{item.title}}">
+                                                <span style="background-color: {{item.color}}"></span>    
+                                            </label>
+                                            <input hidden id="{{item.color}}" type="radio" name="color" >
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="count form__component">
+                                    <div class="title title--left">
+                                        <h2>
+                                            Số lượng
+                                        </h2>
+                                    </div>
+                                    <div class="product__count">
+                                        <span id="product-decrement">
+                                            <i class="far fa-minus"></i>
+                                        </span>
+                                        <input type="text" id="product-count" name="count" value="0">
+                                        <span id="product-increment">
+                                            <i class="far fa-plus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="button form__comonent">
+                                    <div class="product__button">
+                                        <button title="Mua ngay" type="submit" class="cart__button btn btn-fgc btn-fgc--primary btn-fgc--modify btn-fgc--small mb-3"> 
+                                            Mua ngay
+                                        </button>
+                                        <a href="cart" title="Thêm vào giỏ hàng" type="submit" class="cart__button btn btn-fgc btn-fgc--primary btn-fgc--small mb-3"> 
+                                            Thêm vào giỏ hàng
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- FORM END -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!-- SHORT DESCRIPTION START -->
+                        <div class="short-description">
+                            <h5>
+                                Thiết kế theo công nghệ của ĐỨc
+                            </h5>
+                            <p>
+                                Được sự ủng hộ của Quí Khách Hàng và đối tác, 
+                                công ty FGC ngày càng phát triển vững mạnh. 
+                                Với sự phấn đấu của toàn thể cán bộ, chúng tôi 
+                                đang phấn đấu vươn tới các mục tiêu cao hơn, 
+                                mong muốn được đem tới cho Quí Khách Hàng các                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sản phẩm nha khoa chất lượng tốt hơn
+                            </p>
+                        </div>
+                        <!-- SHORT DESCRIPTION END -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!-- SERVICES START -->
+                        <div class="services">
+                            <span>
+                                <i class="far fa-check-square"></i>
+                                đem tới cho quí khách hàng các sản phẩm nha khoa chất lượng tốt hơn
+                            </span>
+                            <span>
+                                <i class="far fa-check-square"></i>
+                                đem tới cho quí khách hàng các sản phẩm nha khoa chất lượng tốt hơn
+                            </span>
+                        </div>
+                        <!-- SERVICES END -->
+                    </div>
+
+
+                    <!-- PRODUCT DESCRIPTION ICON START -->
+                    <div class="product-description__icon">
+                        <h3 class="title">
+                            Được chia sẻ trên:
+                        </h3>
+                        <ul>
+                            {% for item in site.data.product-description-icon %}
+                                <li>
+                                    <a class="product__icon product__icon--{{item.class}}" href="{{item.link}}">
+                                        {{item.icon}}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <!-- PRODUCT DESCRIPTION ICON END -->
+                </div>
+            </div>
+            <!-- PRODUCT DESCRIPTION END -->
+        </div>
+        <!-- PRODUCT DETAILS MAIN CONTENT END -->
+                                        
+        <!-- PRODUCT INFO START -->
+        <div class="product__info">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                    <button class="nav-link active" 
+                    id="nav-home-tab" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#product-info" 
+                    type="button" role="tab" 
+                    aria-controls="product-info" 
+                    aria-selected="true">
+                        Thông tin sản phẩm
+                    </button>
+
+                    <button class="nav-link" 
+                    id="nav-profile-tab" 
+                    data-bs-toggle="tab" 
+                    data-bs-target="#product-more-infor" 
+                    type="button" role="tab" 
+                    aria-controls="product-more-infor" 
+                    aria-selected="false">
+                        Thông tin bổ sung
+                    </button>
+
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane 
+                fade show active" 
+                id="product-info" 
+                role="tabpanel" 
+                aria-labelledby="nav-home-tab">
+                    <div class="product-info">
+                        <div class="product-info__wraps">
+                            <div class="product-info__paragraph">
+                                <p>
+                                    FONA 1000S được thiết kế theo công nghệ tiên 
+                                    tiến của Đức,thuộc tập đoàn đa quốc FONA
+                                </p>
+                                <p>
+                                    Thiết kế cấu trúc ghế, vật liệu ghế vật liệu ghế 
+                                    với chất lượng tốt nhất cùng với sự kiểm soát nghiêm 
+                                    ngặt của nhà sản xuất bảo đảm chất lượng đáng tin cậy.
+                                </p>
+                            </div>
+                            <div class="product-info__main">
+                                <div class="title">
+                                    <p>
+                                        Cấu hình chính gồm
+                                    </p>
+                                </div>
+                                <div class="paragraph">
+                                    {% for item in site.data.product-info limit: 7 %}
+                                    <p> 
+                                        {{item.text}}
+                                    </p>
+                                    {% endfor %}
+                                </div>
+                                <div class="paragraph">
+                                    {% for item in site.data.product-info limit: 5 offset: 7 %}
+                                    <p> 
+                                        {{item.text}}
+                                    </p>
+                                    {% endfor %}
+                                </div>
+                                <div class="paragraph">
+                                    {% for item in site.data.product-info limit: 6 offset: 12 %}
+                                    <p> 
+                                        {{item.text}}
+                                    </p>
+                                    {% endfor %}
+                                </div>
+                                <div class="paragraph">
+                                    {% for item in site.data.product-info limit: 1 offset: 18 %}
+                                    <p> 
+                                        {{item.text}}
+                                    </p>
+                                    {% endfor %}
+                                </div>
+                                <div class="paragraph">
+                                    {% for item in site.data.product-info limit: 1 offset: 19 %}
+                                    <p> 
+                                        {{item.text}}
+                                    </p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" 
+                id="product-more-infor" role="tabpanel" 
+                aria-labelledby="nav-profile-tab">
+                    <div class="product-info">
+                            <div class="product-info__wraps">
+                                <div class="product-info__paragraph">
+                                    <p>
+                                        FONA 1000S được thiết kế theo công nghệ tiên 
+                                        tiến của Đức,thuộc tập đoàn đa quốc FONA
+                                    </p>
+                                    <p>
+                                        Thiết kế cấu trúc ghế, vật liệu ghế vật liệu ghế 
+                                        với chất lượng tốt nhất cùng với sự kiểm soát nghiêm 
+                                        ngặt của nhà sản xuất bảo đảm chất lượng đáng tin cậy.
+                                    </p>
+                                </div>
+                                <div class="product-info__main">
+                                    <div class="title">
+                                        <p>
+                                            Cấu hình chính gồm
+                                        </p>
+                                    </div>
+                                    <div class="paragraph">
+                                        {% for item in site.data.product-info limit: 7 %}
+                                        <p> 
+                                            {{item.text}}
+                                        </p>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="paragraph">
+                                        {% for item in site.data.product-info limit: 5 offset: 7 %}
+                                        <p> 
+                                            {{item.text}}
+                                        </p>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="paragraph">
+                                        {% for item in site.data.product-info limit: 6 offset: 12 %}
+                                        <p> 
+                                            {{item.text}}
+                                        </p>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="paragraph">
+                                        {% for item in site.data.product-info limit: 1 offset: 18 %}
+                                        <p> 
+                                            {{item.text}}
+                                        </p>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="paragraph">
+                                        {% for item in site.data.product-info limit: 1 offset: 19 %}
+                                        <p> 
+                                            {{item.text}}
+                                        </p>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PRODUCT INFO END -->
+
+        <!-- PRODUCT INVOLVE START -->
+        <div class="categories-content__body">
+            <div class="categories__container">
+                    <div class="title">
+                        <h2>
+                            Các sản phẩm liên quan
+                        </h2>
+                    </div>
+                    <div class="categories__container-list">
+                  
+                            <div class="categories__container__slide">
+                                {% for item in site.data.categories-list %}
+                                    <div class="categories__container-item--container">
+                                        <div class="categories__container-item categories__container-item--slide ">
+                                            <div class="categories-item__img">
+                                                <img src="{{item.img_path}}" alt="categories-item-img">
+                                            </div>
+                                            <div class="categories-item__content">
+                                                <ul>
+                                                    <li>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-star"></i>
+                                                    </li>
+                                                </ul>
+                                                <div class="name">
+                                                    <h2>
+                                                        <a href="product-details.html">
+                                                            {{item.name}}
+                                                        </a>
+                                                    </h2>
+                                                </div>
+                                                <div class="price">
+                                                    {{item.price}}vnd
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                         
+                                {% endfor %}
+                            </div>
+              
+                    </div>
+            </div>   
+        </div>
+        <!-- PRODUCT INVOLVE END -->
+    </div>
+</div>
+<!-- PRODUCT DETAILS BODY END -->

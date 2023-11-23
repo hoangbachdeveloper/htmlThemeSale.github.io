@@ -1,0 +1,30 @@
+--- 
+layout: default
+title: page.title
+---
+<!-- BANNER START -->
+<div class="about-content__body-banner" 
+    style="background: url(assets/images/background/about-banner.jpg);">     
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="about-banner__text">
+                    <h1>
+                        {{page.banner__title}}
+                    </h1>
+                    <h5>
+                        <a href="index.html">
+                            Trang chủ
+                        </a>
+                        - 
+                        <span>
+                        {{page.banner__title}}
+                        </span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BANNER END -->
+{{content}}

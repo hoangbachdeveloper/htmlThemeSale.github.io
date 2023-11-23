@@ -1,0 +1,16 @@
+- text: S
+  class: medium
+  
+- text: M
+  class: medium
+
+- text: L
+  class: medium
+
+- text: <span>8 Fl</span> <span>Oz</span>
+  class: large
+
+- text: <span>16 Fl</span> <span>Oz</span>
+  class: large
+  
+

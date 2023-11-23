@@ -1,0 +1,17 @@
+.title {
+    margin-bottom: 30px;
+    &--left {
+        h2 {
+            text-align: left !important;
+        }
+    }
+     h2 {
+         font-size: 1.8rem;
+         font-family: 'Oswald', sans-serif;
+         font-weight: 600x;
+         color: #424242;
+         line-height: 2.4rem;
+         text-transform: uppercase;
+         text-align: center;
+     }
+ }

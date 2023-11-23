@@ -1,0 +1,32 @@
+- text: Trang chủ
+  link: index.html
+  status: active
+
+- text: Giới thiệu
+  link: about.html
+  status: ""
+
+- text: Sản Phẩm 
+  status: ""
+
+- text: Sản Phẩm Nổi bật
+  link: top-product.html
+  status: ""
+
+- text: Tin Tức
+  link: blog.html
+  status: ""
+
+- text: Tuyển Dụng
+  link: hiring.html
+  status: ""
+
+- text: Liên hệ
+  link: contact.html
+  status: ""
+
+- text: Giỏ hàng
+  link: cart.html
+  status: ""
+
+

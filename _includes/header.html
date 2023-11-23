@@ -1,0 +1,164 @@
+<!-- HEADER FULL WIDTH START -->
+<div class="header__full-width">
+  <!-- HEADER WIDTH SOCIAL NETWORK START-->
+  <div class="header__full-width__navbar">
+    <div class="container">
+      <div class="navbar__wraps">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="navbar__wraps-description">
+              <p>
+                Chào mừng bạn đến với công ty TNHH &nbsp;
+                <a href="#"> FGCTech </a>
+                &nbsp; chuyên các thiết bị nha khoa
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 ">
+            
+          </div>   
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HEADER WIDTH SOCIAL NETWORK END-->
+
+  <!-- HEADER WITH LOGO AND CATEGORIES START -->
+  <div class="header__full-width__logo">
+    <div class="container">
+      <div class="header__full-width__logo-inner">
+        <div class="row">
+          <!-- LOGO START -->
+          <div class="col-md-3 col-lg-3 col-xl-3 no-padding navbar__logo-container" >
+            <div class="navbar__logo">
+              <a href="index.html">
+                <img
+                  src="assets/images/logo/logo-fgc-dental.png"
+                  alt="fgc-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- LOGO END -->
+
+          <!-- CATEGORIES START -->
+          <div class="col-xs-5 col-sm-5 col-md-4 col-lg-4 col-xl-4">
+            <div class="navbar__categories">
+                <div id="navbar__categories" class="navbar__categories__collapse">
+                    <span>
+                        Danh mục
+                    </span>
+                </div>
+                <div class="navbar__categories__option categories-option">
+                    {% for item in site.data.home-categories %}
+                        <a href="{{item.link}}">{{item.name}}</a>
+                    {% endfor %}
+                </div>
+            </div>
+          </div>
+          <!-- CATEGORIES END -->
+
+          <!-- SEARCH BOX START -->
+          <div class="col-xs-7 col-sm-7 col-md-5 col-lg-5 col-xl-5">
+            <div class="navbar__search-box">
+              <form action="#" method="post">
+                <div class="form-group">
+                  <input
+                    name="home-search"
+                    placeholder="Gõ tên sản phẩm bạn muốn tìm"
+                    value=""
+                  />
+                  <button type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- SEARCH BOX END -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HEADER WITH LOGO AND CATEGORIES END -->
+
+  <!-- HEADER WITH MENU AND NAV START -->
+  <div class="header__full-width__menu" id="header-full-width">
+    <div class="container">
+      <div class="header__full-width__menu-inner">
+        <div class="row row--margin">
+          <!-- NAVBAR START -->
+          <div class=" col-1 col-lg-10  no-padding" >
+            <!-- NAV START -->
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  id="button-header-nav"
+                >
+                  <i class="far fa-bars"> </i>
+                </button>
+
+                <div class=" navbar-collapse" id="header-nav">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {% for item in site.data.home-nav-item %}
+                      {% if item.text == "Sản Phẩm" %}
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  {{item.text}}
+                              </a>
+                              <!-- MENU DROPDOWN START -->
+                              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                  {% for item in site.data.home-categories %}
+                                  <li>
+                                      <a class="dropdown-item" href="categories.html">
+                                          {{item.name}}
+                                      </a>
+                                  </li>
+                                  {% endfor %}
+                              </ul>
+                              <!-- MENU DROPDOWN END -->
+                          </li>
+                          {% else %}
+                          <li class="nav-item">
+                            <a
+                              class="nav-link  {% if page.permalink == item.link  %} active {% endif %} "
+                              aria-current="page"
+                              href="{{item.link}}"
+                              >{{item.text}}</a
+                            >
+                          </li>
+                      {% endif%}                    
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- NAV END -->
+          </div>
+          <!-- NAVBAR END -->
+
+          <!-- TEXT CONTACT START -->
+          <div class="col-11 col-lg-2  navbar-text">
+            <div class="menu-inner__text">
+                <a href="login.html">
+                  <img src="assets/images/avata/avata.jpg" alt="avata">
+                </a>
+                <a href="cart.html" class="menu-inner__text__cart">
+                  <span>
+                    0
+                  </span>
+                  <i class="fal fa-shopping-cart"></i>
+                </a>
+            </div>
+          </div>
+          <!-- TEXT CONTACT END -->
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <!-- HEADER WITH MENU AND NAV END -->
+</div>
+<!-- HEADER FULL WIDTH END -->

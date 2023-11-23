@@ -1,0 +1,11 @@
+- img_path: assets/images/background/bandroll-1.jpg
+  desc: 100% nhập khẩu
+  title: Nha Khoa
+  wraps-class: ""
+  item-class: ""
+
+- img_path: assets/images/background/bandroll-2.jpg
+  desc: 100% nhập khẩu
+  title: Nha Khoa
+  wraps-class: bandroll-item--right
+  item-class: bandroll-item__inner--left

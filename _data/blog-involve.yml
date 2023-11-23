@@ -1,0 +1,47 @@
+- img_path: assets/images/blog/blog1.jpg
+  date: 26
+  month: '07'
+  name: Dinh dưỡng hạn chế sâu răng
+  desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+- img_path: assets/images/blog/blog2.jpg
+  date: 26
+  month: '07'
+  name: Dinh dưỡng hạn chế sâu răng
+  desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+- img_path: assets/images/blog/blog3.jpg
+  date: 26
+  month: '07'
+  name: Dinh dưỡng hạn chế sâu răng
+  desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+- img_path: assets/images/blog/blog4.png
+  date: 26
+  month: '07'
+  name: Dinh dưỡng hạn chế sâu răng
+  desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+- img_path: assets/images/blog/blog5.png
+  date: 26
+  month: '07'
+  name: Mai thúy vầ răng miệng
+  desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+- img_path: assets/images/blog/blog6.jpg
+  date: 26
+  month: '07'
+  name: Mai thúy vầ răng miệng
+  desc: Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.

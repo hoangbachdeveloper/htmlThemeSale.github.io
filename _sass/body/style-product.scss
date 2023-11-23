@@ -1,0 +1,56 @@
+.ranger-slider__container {
+    border: 1px solid $border-straight-color;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    .title {
+        padding: 18px 24px;
+        background: $primary-color;
+        color: $white-color;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        line-height: 2.4rem;
+
+        span {
+            color: azure;
+            position: unset;
+        }
+    }
+
+    .ranger-slide__wraps {
+        padding: 26px 24px;
+
+        .price {
+            display: flex;
+            align-items: center;
+            font-size: 1.6rem;
+            font-family: 'Roboto', sans-serif;
+            line-height: 4rem;
+
+            p {
+                margin: 0
+            }
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        .ranger-slider__number {
+            display: flex;
+
+            span {
+                position: unset;
+                display: block;
+            }
+        }
+
+        .irs-from,
+        .irs-to,
+        .irs-min,
+        .irs-max {
+            display: none;
+        }
+    }
+}

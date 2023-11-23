@@ -1,0 +1,79 @@
+- status: active
+  id: machine-chair-tab
+  data-target: machine-chair
+  aria-control: machine-chair
+  aria-selected: true
+  text: Ghế máy
+  show: show
+
+- status: ""
+  id: machine-drill-tab
+  data-target: machine-drill
+  aria-control: machine-drill
+  aria-selected: false
+  text: Khoan tay
+  show: ""
+
+- status: ""
+  id: machine-compression-tab
+  data-target: machine-compression
+  aria-control: machine-compression
+  aria-selected: false
+  text: Máy nén
+  show: ""
+
+- status: ""
+  id: machine-suck-tab
+  data-target: machine-suck
+  aria-control: machine-suck
+  aria-selected: false
+  text: Máy hút
+  show: ""
+
+- status: "active"
+  id: break-teeth-tool-tab
+  data-target: break-teeth-tool
+  aria-control: break-teeth-tool
+  aria-selected: false
+  text: Dụng cụ nhổ răng
+  show: show
+
+- status: ""
+  id: shape-tool-tab
+  data-target: shape-tool
+  aria-control: shape-tool
+  aria-selected: false
+  text: Dụng cụ phục hình
+  show: ""
+
+- status: ""
+  id: anesthetize-tool-tab
+  data-target: anesthetize-tool
+  aria-control: anesthetize-tool
+  aria-selected: false
+  text: Dụng cụ gây tê
+  show: ""
+
+- status: "active"
+  id: break-teeth-tools-tab
+  data-target: break-teeth-tools
+  aria-control: break-teeth-tools
+  aria-selected: false
+  text: Dụng cụ nhổ răng
+  show: show
+
+- status: ""
+  id: shape-tools-tab
+  data-target: shape-tools
+  aria-control: shape-tools
+  aria-selected: false
+  text: Dụng cụ phục hình
+  show: ""
+
+- status: ""
+  id: anesthetize-tools-tab
+  data-target: anesthetize-tools
+  aria-control: anesthetize-tools
+  aria-selected: false
+  text: Dụng cụ gây tê
+  show: ""

@@ -1,0 +1,192 @@
+--- 
+layout: post
+title: Thanh toán
+banner__title: Thanh toán
+permalink: checkout.html
+---
+
+<div id="checkout">
+    <div class="checkout">
+        <div class="container container-modify">
+            <div class="row row-reverse">
+                <div class="col-md-7 no-padding">
+                    <div class="checkout__info">
+                        <div class="checkout__title title">
+                            <h2 id="checkout-title">
+                                Thông tin cá nhân
+                            </h2>
+                            <p id="checkout__transform">
+                                Bạn đã có tài khoản? <span>Đăng nhập</span>
+                            </p>
+                        </div>
+                        <div class="checkout__form__wraps">
+                            <div class="checkout__form checkout__form--guess active">
+                                <form id="guess-form" action="#" method="get">
+                                    <div class="checkout__form-group form-group">
+                                        <input type="email" name="guess-email" class="checkout__form-control form-control" placeholder="Email" required >
+                                    </div>
+    
+                                    <div class="checkout__form-group checkout__form-group--modify form-group">
+                                        <input type="text" name="guess-first-name" class="checkout__form-control checkout__form-control--modify form-control" placeholder="Họ" required >
+                                        <input type="text" name="guess-last-name" class="checkout__form-control checkout__form-control--modify form-control" placeholder="Tên" required >
+                                    </div>
+    
+                                    <div class="checkout__form-group form-group">
+                                        <div class="checkout__form-group__inner">
+                                            <input hidden type="checkbox" name="guess-create-pass" id="guess-pass">
+                                            <label for="guess-pass" class="checkout__label checkout__label--box">
+                                                <i class="far fa-check"></i>
+                                            </label>
+                                            <label for="guess-pass" class="checkout__label checkout__label--text">
+                                                Tạo tài khoản mới
+                                            </label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="checkout__form-group  checkout__form-group--hidden form-group">
+                                        <div class="checkout__form-group--modify">
+                                            <input type="password" name="guess-pass" class="checkout__form-control checkout__form-control--modify form-control checkout__form-control--required" placeholder="Mật khẩu (Tùy chọn)"  >
+                                            <input type="password" name="guess-confirm" class="checkout__form-control checkout__form-control--modify form-control checkout__form-control--required" placeholder="Xác nhận mật khẩu"  >
+                                        </div>
+                                    </div>
+    
+                                    <div class="checkout__form-group form-group">
+                                        <button type="submit" class="btn btn-fgc btn-fgc--small btn-fgc--primary">
+                                            Tiếp tục
+                                        </button>
+                                    </div>
+    
+                                </form>
+                            </div>
+    
+                            <div class="checkout__form checkout__form--customer">
+                                <form id="customer-form" action="#" method="get">
+                                    <div class="checkout__form-group form-group">
+                                        <input type="email" name="customer-email" class="checkout__form-control form-control" placeholder="Email" required >
+                                    </div>
+                                    <div class="checkout__form-group form-group">
+                                        <input type="password" name="customer-password" class="checkout__form-control form-control" placeholder="Mật khẩu" required >
+                                    </div>
+    
+                                    <div class="checkout__form-group form-group">
+                                        <button type="submit" class="btn btn-fgc btn-fgc--small btn-fgc--primary">
+                                            Tiếp tục
+                                        </button>
+                                    </div>
+    
+                                </form>
+                            </div>
+
+                            <div class="checkout__form checkout__form--address ">
+                                <form id="address-form" action="#" method="get">
+                                   
+    
+                                    <div class="checkout__form-group checkout__form-group--modify form-group">
+                                        <input type="text" name="address-first-name" class="checkout__form-control checkout__form-control--modify form-control" placeholder="Họ" required >
+                                        <input type="text" name="address-last-name" class="checkout__form-control checkout__form-control--modify form-control" placeholder="Tên" required >
+                                    </div>
+    
+                                    <div class="checkout__form-group form-group">
+                                        <input type="email" name="address-email" class="checkout__form-control form-control" placeholder="Email" required >
+                                    </div>
+
+                                 
+
+                                    <div class="checkout__form-group form-group">
+                                      <select name="country" required class="checkout__form-control checkout__select form-control" title="Chọn">
+                                            <option>
+                                                Quốc gia
+                                            </option>
+                                            <option value="1">
+                                                Việt Nam
+                                            </option>
+                                            <option value="2">
+                                                Hoa Kỳ
+                                            </option>
+                                      </select>
+                                    </div>
+
+                                    <div class="checkout__form-group form-group">
+                                        <input type="text" name="address-district" class="checkout__form-control form-control" placeholder="Quận/Huyện" required >
+                                    </div>
+
+                                    <div class="checkout__form-group form-group">
+                                        <input type="text" name="address-town" class="checkout__form-control form-control" placeholder="Số nhà/Thôn/Xóm (tùy chọn)" required >
+                                    </div>
+
+                                    <div class="checkout__form-group checkout__form-group--modify form-group">
+                                        <input type="text" name="address-post-code" class="checkout__form-control checkout__form-control--modify form-control" placeholder="Mã bưu điện (tùy chọn)" >
+                                        <input type="text" name="address-phone-number" class="checkout__form-control checkout__form-control--modify form-control" placeholder="Số điện thoại (Tùy chọn)" >
+                                    </div>
+
+                                    <div class="checkout__form-group form-group">
+                                        <div class="checkout__form-group__inner">
+                                            <input hidden type="checkbox" name="address2-create-pass" id="address-pass">
+                                            <label for="address-pass" class="checkout__label checkout__label--box">
+                                                <i class="far fa-check"></i>
+                                            </label>
+                                            <label for="address-pass" class="checkout__label checkout__label--text">
+                                                Địa chỉ giao hàng khác với địa chỉ thanh toán
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="checkout__form-group  checkout__form-group--hidden form-group">
+                                        <div class="checkout__form-group checkout__form-group--modify form-group">
+                                            <input type="text" name="address2-first-name" class="checkout__form-control checkout__form-control--required checkout__form-control--modify form-control" placeholder="Họ" required >
+                                            <input type="text" name="address2-last-name" class="checkout__form-control checkout__form-control--modify form-control checkout__form-control--required" placeholder="Tên" required >
+                                        </div>
+        
+                                        <div class="checkout__form-group form-group">
+                                            <input type="email" name="address2-email" class="checkout__form-control form-control checkout__form-control--required" placeholder="Email" required >
+                                        </div>
+    
+                                     
+    
+                                        <div class="checkout__form-group form-group">
+                                          <select name="country" required class="checkout__form-control checkout__form-control--required form-control" title="Chọn">
+                                                <option>
+                                                    Quốc gia
+                                                </option>
+                                                <option value="1">
+                                                    Việt Nam
+                                                </option>
+                                                <option value="2">
+                                                    Hoa Kỳ
+                                                </option>
+                                          </select>
+                                        </div>
+    
+                                        <div class="checkout__form-group form-group">
+                                            <input type="text" name="address2-district" class="checkout__form-control form-control checkout__form-control--required" placeholder="Quận/Huyện" required >
+                                        </div>
+    
+                                        <div class="checkout__form-group form-group">
+                                            <input type="text" name="address-town" class="checkout__form-control form-control checkout__form-control--required" placeholder="Số nhà/Thôn/Xóm (tùy chọn)" required >
+                                        </div>
+    
+                                        <div class="checkout__form-group checkout__form-group--modify form-group">
+                                            <input type="text" name="address-post-code" class="checkout__form-control checkout__form-control--modify form-control" placeholder="Mã bưu điện (tùy chọn)" >
+                                            <input type="text" name="address-phone-number" class="checkout__form-control checkout__form-control--modify form-control" placeholder="Số điện thoại (Tùy chọn)" >
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="checkout__form-group form-group">
+                                        <button type="submit" class="btn btn-fgc btn-fgc--small btn-fgc--primary">
+                                            Tiếp tục
+                                        </button>
+                                    </div>
+    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 no-padding">
+                  {% include checkout-cart.html %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

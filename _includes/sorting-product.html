@@ -1,0 +1,15 @@
+<div id="sorting">
+    <div class="sorting">
+        <ul>
+            {% for item in site.data.sorting %}
+            <li>
+                <a href="#" class="sorting__link {{item.class}}">
+                    <span>
+                        {{item.text}}
+                    </span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

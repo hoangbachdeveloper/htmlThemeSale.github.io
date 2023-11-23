@@ -1,0 +1,21 @@
+   <!-- SERVICES LIST START -->
+   <div class="body-home__services">
+    {% for item in site.data.home-services-list %}
+    <div class="home__services-item">
+        <!-- IMG -->
+        <div class="services-item__img">
+        <img src="{{item.icon_path}}" alt="home-services-img" />
+        </div>
+        <!-- CONTENT -->
+        <div class="services-item__content">
+        <div class="services-item__title">
+            <h3>{{item.title}}</h3>
+        </div>
+        <div class="services-item__desc">
+            <h4>{{item.desc}}</h4>
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+    <!-- SERVICES LIST END -->

@@ -1,0 +1,24 @@
+
+<div id="partner">
+    <div class="partner">
+        <div class="container container-modify">
+
+            <div class="partner__title title">
+               <h2>
+                Đối tác của chúng tôi
+               </h2>
+            </div>
+    
+            <div class="partner__container" id="partner-slick">
+               {% for item in site.data.partner-list %}
+                <div class="partner__item">
+                    <a href="#">
+                        <img src="{{item.img_path}}" alt="partner-img">
+                    </a>
+                </div>
+               {% endfor %}
+            </div>
+        </div>
+      
+    </div>
+</div>

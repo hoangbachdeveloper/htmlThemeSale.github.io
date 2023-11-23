@@ -1,0 +1,137 @@
+---
+layout: post
+title: Hiring
+banner__title: Tuyển Dụng
+permalink: hiring.html
+---
+
+<!-- HIRING START -->
+<div class="hiring-content__body">
+    <div class="container container-modify">
+        <div class="row nav">
+            <!-- LEFT SIDEBAR START -->
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="hiring__sidebar-wraps" >
+                    <ul class="nav nav-tabs hiring__sidebar-list" id="nav-tab" role="tablist">
+                        {%  for item in site.data.hiring-item %}
+                        <li class="hiring__sidebar-item {{item.status}} ">
+                            <a   id="nav-{{item.id}}-tab" data-bs-toggle="tab" href="#nav-{{item.id}}" type="button" role="tab" aria-controls="nav-{{item.id}}" aria-selected="{{item.selected}}">
+                                {{item.text}} 
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <!--LEFT SIDEBAR END -->
+
+            <!-- MAIN CONTENT START -->
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <div class="tab-content" id="nav-tabContent">
+                    {%  for item in site.data.hiring-item %}
+                    <div class="tab-pane fade {{item.show}} {{item.status}}" id="nav-{{item.id}}" role="tabpanel" aria-labelledby="nav-{{item.id}}-tab">
+                        <div class="hiring-content__body-wraps">
+                            <!-- REQUIRED START -->
+                            <div class="hiring-wraps__required">
+                                <div class="title">
+                                    <h2>
+                                        Trưởng phòng kỹ thuật làm việc tại vinh
+                                    </h2>
+                                </div>
+                                <ul class="content">
+                                    {% for item in site.data.hiring-required %}
+                                    <li>
+                                        <p>
+                                            {{item.title}}
+                                        </p>
+                                        <span>
+                                            {{item.content}}
+                                        </span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <!-- REQUIRED END  -->
+    
+                            <!-- CONTENT START -->
+                            <div class="hiring-wraps__content">
+                            
+                                <div class="content__paragraph">
+                                    <div class="title">
+                                        <h2>
+                                            Mô tả công việc
+                                        </h2>
+                                    </div>
+                                    <ul class="desc">
+                                        {% for item in site.data.hiring-paragraph limit: 5 %}
+                                        <li>
+                                            <p>
+                                                {{item.content}}
+                                            </p>
+                                        </li>
+                                        {% endfor %}
+                                        </ul>
+                                </div>
+                            
+    
+                                <div class="content__paragraph">
+                                    <div class="title">
+                                        <h2>
+                                            Quyền lợi được hưởng
+                                        </h2>
+                                    </div>
+                                    <ul class="desc">
+                                        {% for item in site.data.hiring-paragraph offset: 5 limit: 6 %}
+                                        <li>
+                                            <p>
+                                                {{item.content}}
+                                            </p>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="content__paragraph">
+                                    <div class="title">
+                                        <h2>
+                                            Yêu cầu khác
+                                        </h2>
+                                    </div>
+                                    <ul class="desc">
+                                        {% for item in site.data.hiring-paragraph offset: 11 limit: 3 %}
+                                        <li>
+                                            <p>
+                                                {{item.content}}
+                                            </p>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="content__paragraph">
+                                    <div class="title">
+                                        <h2>
+                                            HÌnh thức nạp hồ sơ
+                                        </h2>
+                                    </div>
+                                    <ul class="desc">
+                                        {% for item in site.data.hiring-paragraph offset: 14 %}
+                                        <li>
+                                            <p>
+                                                {{item.content}}
+                                            </p>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- CONTENT END -->
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- MAIN CONTENT END -->
+        </div>
+    </div>
+</div>
+<!-- HIRING END -->

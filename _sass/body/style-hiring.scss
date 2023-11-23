@@ -1,0 +1,179 @@
+.hiring-content__body {
+    .hiring__sidebar-wraps {
+        width: 100%;
+        height: auto;
+
+        .hiring__sidebar-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid $border-straight-color;
+
+            .hiring__sidebar-item {
+                border-bottom: 1px solid $border-straight-color;
+                transition: $transition-time;
+                width: 100%;
+                &.active {
+                    background-color: $primary-color;
+                    transform: translateX(-5px);
+
+                    a {
+                        color: $white-color;
+
+                        i {
+                            display: block;
+                        }
+                    }
+
+                }
+
+                &:hover {
+                    background-color: $primary-color;
+                    transform: translateX(-5px);
+
+                    a {
+                        color: $white-color;
+
+                        i {
+                            display: block;
+                        }
+                    }
+                }
+
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 60px;
+                    text-decoration: none;
+                    color: $text-color;
+                    margin: 0;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    padding: 0 23px;
+                    text-transform: uppercase;
+
+                    @include lg {
+                        font-size: 1.4rem;
+                    }
+
+                    i {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .hiring-content__body-wraps {
+        padding: 9px 44px;
+        width: 100%;
+        height: auto;
+        @media (max-width: 767.98px) {
+            padding: 9px 23px;
+        }
+        @media (max-width: 575.98px) {
+            padding: 9px 0px;
+        }
+
+        .hiring-wraps__required {
+            .title {
+                margin-bottom: 32px;
+
+                h2 {
+                    font-family: "Oswald", sans-serif;
+                    font-size: 2.6rem;
+                    line-height: 3.5rem;
+                    font-weight: 600;
+                    color: $text-color;
+                    text-transform: uppercase;
+
+                    @include lg {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .content {
+                list-style: none;
+                margin: 0 0 58px 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                @media(max-width: 991.98px) {
+                    margin-bottom: 30px;
+                }
+                @media(max-width: 767.98px) {
+                    margin-bottom: 15px;
+                }
+
+                li {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 2rem;
+                    color: $text-color;
+                    line-height: 2rem;
+                    margin: 0 0 24px 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    @include lg {
+                        font-size: 1.6rem;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        margin: 0 10px 0 0;
+                    }
+                }
+            }
+        }
+
+        .hiring-wraps__content {
+            .content__paragraph {
+                font-family: 'Roboto', sans-serif;
+                padding: 0 0 23px 0;
+                margin: 0 0 20px 0;
+                @media(max-width: 767.98px) {
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                }
+                .title {
+                    margin-bottom: 30px;
+
+                    h2 {
+                        font-size: 2rem;
+                        color: $primary-color;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .desc {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        p {
+                            font-size: 1.6rem;
+                            color: $text-color;
+
+                            @include lg {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

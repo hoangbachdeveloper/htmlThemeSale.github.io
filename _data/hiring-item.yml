@@ -1,0 +1,31 @@
+- text: 1.Trưởng phòng kỹ thuật
+  status: active
+  selected: true
+  id: tabtab1
+  show: show
+
+
+- text: 2.Nhân viên kế toán tổng hợp
+  status: ""
+  selected: false
+  id: tab2
+  show: ''
+
+- text: 3.Nhân viên kinh doanh
+  status: ""
+  selected: false
+  id: tab3
+  show: ''
+  
+- text: 4.Nhân viên Marketing - ĐỒ họa
+  status: ""
+  selected: false
+  id: tab4
+  show: ''
+  
+- text: 5.Nhân viên IT
+  status: ""
+  selected: false
+  id: tab5
+  show: ''
+  

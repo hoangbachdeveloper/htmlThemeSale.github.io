@@ -1,0 +1,56 @@
+<div id="blog">
+    <div class="blog">
+        <div class="blog__title title">
+           <h2>
+            Bài viết nổi bật
+           </h2>
+        </div>
+
+        <div class="container container-modify">
+            <div class="blog__slick">
+                <button class="blog__arrows blog__arrows--left" id="blog-btn-left">
+                    <i class="fas fa-caret-left"></i>
+                </button>
+                <button class="blog__arrows blog__arrows--right" id="blog-btn-right">
+                    <i class="fas fa-caret-right"></i>
+                </button>
+                <div class="row" id="blog-slick">
+                    {% for item in site.data.blog limit: 3 %}
+                    <div class="col-sm-6 col-md-4">
+                        <div class="blog__item">
+                            <div class="blog__item__wraps">
+                                <div class="blog__img">
+                                    <a href="blog-details.html">
+                                        <img src="{{item.img_path}}">
+                                    </a>
+                                </div>
+                                <div class="blog__date">
+                                    <span>31</span>
+                                    <span>T.5</span>
+                                </div>
+                                <div class="blog__info">
+                                    <a href="#" class="blog__categories">
+                                        Tin tức
+                                    </a>
+                                    <h3>
+                                        <a href="blog-details.html">
+                                            {{item.name}}
+                                        </a>
+                                    </h3>
+                                    <span>
+                                        {{item.desc}}
+                                    </span>
+    
+                                    <a class="blog__link" href="blog-details.html">
+                                        Đọc thêm
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

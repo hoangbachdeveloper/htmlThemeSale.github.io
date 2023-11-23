@@ -1,0 +1,120 @@
+--- 
+layout: post
+title: Product
+banner__title: Sản Phẩm
+permalink: categories.html
+--- 
+
+<div id="top-product">
+    <div class="product product--page">
+        <div class="container container-modify">
+
+            <div class="product__navigation">
+                <div class="product__filter-button">
+                    <button id="product-filter">
+                        <i class="fal fa-filter"></i> 
+                        <span>
+                            Lọc
+                        </span>
+                    </button>
+                </div>
+                <div class="product__sort">
+                    <div class="product__sort__pagination">
+                        <span class="product__pagination__button">
+                            <i class="fab fa-windows"></i>
+                        </span>
+                        <div class="product__pagination__scale">
+                            {% include sorting-product.html %}
+                        </div>
+                    </div>
+                    <div class="product__sort__select">
+                        <span id="product-sort-button" class="product__sort__button">
+                            Sắp xếp theo
+                        </span>
+                        <ul id="product-sort-list">
+                            <li>
+                                <a href="#">
+                                    Mặc định
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Bán chạy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Theo tên
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Giá, từ cao đến thấp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   Giá, từ thấp đến cao
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">   
+                <div id="product-sidebar" class="product__sidebar ">
+                    <span id="product-sidebar-close"></span>
+                    {% include filter.html %}
+                </div>
+                <div id="product-body" class="product__body ">
+                 
+
+                    <div class="product__list">
+                        <div class="product__title title title--modify title--left">
+                        </div>
+                        <div class="row">
+                            {% for item in site.data.top-product %}
+                                <div class="product__list__item product__list__item--modify col-6 col-lg-3">
+                                    <div class="product__item">
+                                        <div class="product__item__wraps">
+                                            <div class="product__img">
+                                                <a href="product-details.html" class="product__img__link product__img__link--4by3 product__img__link--16by9">
+                                                <img src="{{item.img_path}}" alt="product">
+                                                </a>
+                                                <div class="product__function">
+                                                    <a href="#" title="add to cart">
+                                                        <i class="fal fa-shopping-bag"></i>
+                                                    </a>
+                                                    <a href="#" title="quick view">
+                                                        <i class="fal fa-search"></i>
+                                                    </a>
+                                                    <a href="#" title="add to wish list">
+                                                        <i class="fal fa-heart"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="product__info">
+                                                <h3>
+                                                    <a href="product-details.html">
+                                                        {{item.name}}
+                                                    </a>
+                                                </h3>
+                                                <p>
+                                                    {{item.price}}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+
+                        {% include pagination.html %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

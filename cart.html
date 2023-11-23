@@ -1,0 +1,130 @@
+--- 
+layout: post
+title: Giỏ hàng
+banner__title: Giỏ hàng
+permalink: cart.html
+---
+
+<div class="cart">
+    <div class="container container-modify">
+        <div class="cart__container">
+            <div class="cart__table">
+                <form action="#" method="get">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Hành động
+                                </th>
+                                <th>
+                                    Hình ảnh
+                                </th>
+                                <th>
+                                    Tên Sản Phẩm
+                                </th>
+                                <th>
+                                    Đơn Giá (VND)
+                                </th>
+                                <th>
+                                    Số lượng
+                                </th>
+                                <th>
+                                    Tổng (VND)
+                                </th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                            {% for item in site.data.product-info limit: 2 %}
+                            <tr>
+                                <td>
+                                    <a href="#" class="cart__remove"> 
+                                        <i class="fal fa-times"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <img src="assets/images/category/cat1.png" alt="cart-product-img">
+                                </td>
+                                <td>
+                                    Ghế Nha Khoa
+                                </td>
+                                <td>
+                                    20.000.000
+                                </td>
+                                <td>
+                                    <button class="cart__form-component cart__button cart__button--decrement">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="text" class="cart__form-component" value="1" required name="count[]">
+                                    <button class="cart__form-component cart__button cart__button--increment">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    20.000.000
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            <tr>
+                                <td colspan="3">
+                                    <form action="#" method="get">
+                                        <div class="cart__form-group">
+                                            <input type="text" name="coupon_code" placeholder="Mã giảm giá" class="cart__form-control"> 
+                                            <button type="submit" class="cart__button btn btn-fgc btn-fgc--primary btn-fgc--small">
+                                                Áp dụng
+                                            </button>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td colspan="3" class="cart__submit">
+                                    <button type="submit" class="cart__button btn btn-fgc btn-fgc--primary btn-fgc--small">
+                                        Cập nhật giỏ hàng
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="cart__checkout">
+
+            <div class="row">
+                <div class="col-lg-6"> </div>
+                <div class="col-lg-6">
+                    <table class="table table--modify">
+                        <tr>
+                            <td class="cart__table-title" colspan="2">
+                                Tổng giỏ hàng
+                            </td>
+                        </tr>
+                        <tr> 
+                            <td class="cart__table-title">
+                                Tổng số phụ (VNĐ)
+                            </td>
+                            <td class="cart__table-content">    
+                                40.000.000
+                            </td>
+                        </tr>
+                        <tr> 
+                            <td class="cart__table-title">
+                                Tổng (VNĐ)
+                            </td>
+                            <td class="cart__table-content">    
+                                40.000.000
+                            </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2"class="cart__table-title">
+                            <a href="checkout.html" class="cart__button btn btn-fgc btn-fgc--primary btn-fgc--small">
+                                Thanh toán đơn hàng
+                            </a>
+                           </td> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

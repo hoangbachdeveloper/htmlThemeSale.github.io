@@ -1,0 +1,132 @@
+<div id="filter">
+    <div class="filter">
+        <div class="filter__component filter__categories">
+            <div class="filter__title title title--left">
+                <h2>
+                    Danh mục
+                </h2>
+                <span></span>
+            </div>
+            <ul >
+                {% for item in site.data.filter-categories %}
+                <li>
+                    <i class="fal fa-angle-right"></i>
+                    <a href="#">
+                        {{item.text}}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="filter__component filter__price">
+            <div class="filter__title title title--left">
+                <h2>
+                    Giá
+                </h2>
+                <span></span>
+            </div>
+            <form action="#" method="get">
+                <ul>
+                    {% for item in site.data.filter-price %}
+                        <li>
+                            <label class="filter__label filter__price__box" for="{{item.id}}">
+                                <i class="far fa-check"></i>
+                            </label>
+                            <label class="filter__label filter__price__text" for="{{item.id}}">
+                                {{item.text}}
+                            </label>
+                            <input id="{{item.id}}" hidden type="checkbox" name="price" value="">
+                        </li>
+                    {% endfor %}
+                </ul>
+            </form>
+        </div>
+
+        <div class="filter__component filter__size">
+            <div class="filter__title title title--left">
+                <h2>
+                    Kích thước
+                </h2>
+                <span></span>
+            </div>
+            <form action="#" method="get">
+                <ul>
+                    {% for item in site.data.filter-size %}
+                        <li>
+                            <label class="filter__label filter__size__box {{item.class}}" for="{{item.id}}">
+                                {{item.text}}
+                            </label>
+                            <input id="{{item.id}}" hidden type="checkbox" name="size" value="">
+                        </li>
+                    {% endfor %}
+                </ul>
+            </form>
+        </div>
+
+        <div class="filter__component filter__color">
+            <div class="filter__title title title--left">
+                <h2>
+                    Màu sắc
+                </h2>
+                <span></span>
+            </div>
+            <form action="#" method="get">
+                <ul>
+                    {% for item in site.data.filter-color %}
+                        <li>
+                            <label class="filter__label filter__color__box {{item.class}}" for="{{item.id}}">
+                               <span style="background-color: {{item.color}};"></span>
+                            </label>
+                            <input id="{{item.id}}" hidden type="checkbox" name="size" value="">
+                        </li>
+                    {% endfor %}
+                </ul>
+            </form>
+        </div>
+
+        <div class="filter__component filter__tag">
+            <div class="filter__title title title--left">
+                <h2>
+                    Thẻ
+                </h2>
+                <span></span>
+            </div>
+            <form action="#" method="get">
+                <ul>
+                    {% for item in site.data.filter-tag %}
+                        <li>
+                            <label class="filter__label filter__tag__box {{item.class}}" for="{{item.id}}">
+                              {{item.text}}
+                            </label>
+                            <input id="{{item.id}}" hidden type="checkbox" name="tag" value="">
+                        </li>
+                    {% endfor %}
+                </ul>
+            </form>
+        </div>
+
+        <div class="filter__component filter__brand">
+            <div class="filter__title title title--left">
+                <h2>
+                    Thương hiệu
+                </h2>
+                <span></span>
+            </div>
+            <ul >
+                {% for item in site.data.filter-brand %}
+                <li>
+                    <i class="fal fa-angle-right"></i>
+                    <a href="#">
+                        {{item.text}}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- <div class="filter__component filter__img">
+            <img src="assets/images/right-sidebar/banner_sidebar.webp" alt="igm">
+        </div> -->
+
+    </div>
+</div>

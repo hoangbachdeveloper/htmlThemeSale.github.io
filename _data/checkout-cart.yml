@@ -1,0 +1,19 @@
+- img_path: assets/images/product/1.jpg
+  name: Thiết bị nha khoa 1
+  color: Đỏ
+  weight: 1kg
+
+- img_path: assets/images/product/2.jpg
+  name: Thiết bị nha khoa 2
+  color: Vàng
+  weight: 1kg
+
+- img_path: assets/images/product/3.jpg
+  name: Thiết bị nha khoa 3
+  color: Trắng
+  weight: 1kg
+
+- img_path: assets/images/product/4.jpg
+  name: Thiết bị nha khoa 4
+  color: Đen
+  weight: 1kg

@@ -1,0 +1,46 @@
+.pagination__component {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            margin: 0 5px  ;
+            a {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #f9faff;
+                color: $text-color;
+                border: 1px solid $border-straight-color;
+                text-decoration: none;
+                transition: .3s;
+                span {
+                    margin: auto;
+                    font-size: 1.8rem;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                }
+
+                &.active, &:hover  {
+                    background: $primary-color;
+                    color: $white-color;
+                }
+            }
+            
+        }
+        span {
+            font-size: 0.5rem;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 800;
+            display: flex;
+        }
+    }
+}

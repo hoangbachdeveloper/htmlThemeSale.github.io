@@ -1,0 +1,28 @@
+<div id="home-services">
+    <div class="services">
+        <div class="services__title title  ">
+            <h2>
+                Dịch vụ của chúng tôi
+            </h2>
+        </div>
+        <div class="container container-modify">
+            <div class="row">
+                {% for item in site.data.home-services-list %}
+                <div class="col-md-6 col-lg-6 col-xl-3 mb-3">
+                    <div class="services__item">
+                        <img src="{{item.icon_path}}" alt="services">
+                        <div class="services__text">
+                            <h3>
+                                {{item.title}}
+                            </h3>
+                            <p>
+                                {{item.desc}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

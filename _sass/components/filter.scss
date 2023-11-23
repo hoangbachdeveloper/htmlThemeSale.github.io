@@ -1,0 +1,249 @@
+#filter {
+    display: none;
+    &.active {
+        display: block;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .filter {
+        padding-left: 15px;
+        height: auto;
+        &__component {
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+        &__title {
+            padding: 6px 0 6px 14px;
+            border-left: 2px solid $primary-color;
+            margin: 0;
+            &.title--left {
+                display: flex;
+                align-items: center;
+                h2 {
+                    text-align: left;
+                    padding-right: 15px;
+                }
+                span {
+                    display: block;
+                    flex: 1;
+                    height: 1px;
+                    background-color: $border-straight-color;
+                }
+            }
+        }
+        &__categories {
+            ul {
+                list-style: none;
+                padding: 20px 0 0 0;
+                margin: 0;
+                li {
+                    height: 36px;
+                    transition: $transition-time;
+                        &:hover {
+                        transform: translateX(5px);
+                        i {
+                            color: $primary-color;
+                            transform: scaleX(1);
+                        }
+                        a {
+                            color: $primary-color;
+                        }
+                    }
+                    a {
+                        line-height: 3.6rem;
+                        font-size: 1.5rem;
+                        font-family: 'Roboto', sans-serif;
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: $transition-time;
+
+                    }
+                    i {
+                        font-size: 1.5rem;
+                        transition: $transition-time;
+                       transform: scaleX(0);
+                    }
+                }
+            }
+        }
+        &__price {
+            ul {
+                padding: 25px 0 16px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 10px 0;
+                    &:hover {
+                        label {
+                            color: $primary-color;
+                        }
+                    }
+                    .filter__price__box {
+                        width: 16px; 
+                        height: 16px;
+                        display: block;
+                        border: 1px solid $border-color;
+                        border-radius: 2px;
+                        margin: 0 10px 0 0;
+                        display: flex;
+                        cursor: pointer;
+                        i {
+                            margin: auto;
+                            color: $white-color;
+                        }
+                        &.active {
+                            background-color: $primary-color;
+                        }
+                    }
+
+                    .filter__price__text {
+                        font-size: 1.4rem;
+                        font-family: 'Roboto', sans-serif;
+                        letter-spacing: .1em;
+                        transition: $transition-time;
+                        cursor: pointer;
+                        &.active {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        &__size{
+            ul {
+                display: flex;
+                align-items: flex-end;
+                padding-bottom: 15px;
+                li {
+                   .filter__size__box {
+                        display: flex;
+                        width:40px;
+                        height: 42px;
+                        margin: 0 10px 10px 0;
+                        font-size: 1.4rem;
+                        font-family: 'Roboto', sans-serif;
+                        color: $text-color;
+                        border: 1px solid $border-color;
+                        font-weight: 700;
+                        transition: $transition-time;
+                        &:hover {
+                            cursor: pointer;
+                            border-color: $primary-color;
+                            background-color: $primary-color;
+                            color: $white-color;
+                        }
+                        &.active {
+                            border-color: $primary-color;
+                            background-color: $primary-color;
+                            color: $white-color;
+                        }
+                        &.medium {
+                            justify-content: center ;
+                            align-items: center;
+                        }
+                        &.large {
+                            height: 82px;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+
+                        }
+                   }
+                }
+            }
+        }
+        &__color {
+            ul {
+                padding-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+            li {
+                margin: 5px ;
+            }
+            .filter__label {
+                width: 34px;
+                height: 34px;
+                border: 1px solid ;
+                border-radius: 50%;
+                padding: 3px;
+                cursor: pointer;
+                border-color: transparent;
+                transition: $transition-time;
+                &:hover, &.active {
+                    border-color: $border-color;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }  
+                span{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    
+                }
+            }
+        }
+        &__tag {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 30px;
+            }
+            .filter__tag__box {
+                margin: 0 10px 10px 0; 
+                padding: 10px;
+                font-size: 1.4rem;
+                font-family: 'Roboto', sans-serif;
+                border: 1px solid $border-color;
+                color: $text-color;
+                transition: $transition-time;
+                &:hover, &.acive {
+                    background-color: $primary-color;
+                    color: $white-color;
+                    cursor: pointer;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+        }
+        &__brand {
+            ul {
+                list-style: none;
+                padding: 20px 0 0 0;
+                margin: 0;
+                li {
+                    height: 36px;
+                    transition: $transition-time;
+                        &:hover {
+                        transform: translateX(5px);
+                        i {
+                            color: $primary-color;
+                            transform: scaleX(1);
+                        }
+                        a {
+                            color: $primary-color;
+                        }
+                    }
+                    a {
+                        line-height: 3.6rem;
+                        font-size: 1.5rem;
+                        font-family: 'Roboto', sans-serif;
+                        color: $text-color;
+                        text-decoration: none;
+                        transition: $transition-time;
+
+                    }
+                    i {
+                        font-size: 1.5rem;
+                        transition: $transition-time;
+                       transform: scaleX(0);
+                    }
+                }
+            }
+        }
+    }
+}

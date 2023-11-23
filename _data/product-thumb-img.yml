@@ -1,0 +1,11 @@
+- img_path: assets/images/product/product-main.jpg
+  status: active
+
+- img_path: assets/images/product/product-thumb-1.jpg
+  status: ""
+
+- img_path: assets/images/product/product-thumb-2.jpg
+  status: ""
+
+- img_path: assets/images/product/thiet-bi-nha-khoa-cho-phong-kham.jpg
+  status: ""

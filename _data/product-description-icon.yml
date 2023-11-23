@@ -1,0 +1,19 @@
+- icon: <i class="fab fa-twitter-square"></i>
+  link: twitter.com
+  class: twitter
+
+- icon: <i class="fal fa-basketball-ball"></i>
+  link: #
+  class: basketball
+
+- icon: <i class="fab fa-skype"></i>
+  link: skype.com
+  class: skype
+
+- icon: <i class="fab fa-pinterest"></i>
+  link: pinterest.com
+  class: pinterest
+
+- icon: <i class="fab fa-facebook-square"></i>
+  link: facebook.com
+  class: facebook

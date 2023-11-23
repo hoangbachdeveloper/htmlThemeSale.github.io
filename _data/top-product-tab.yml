@@ -1,0 +1,22 @@
+- text: Hàng Mới
+  class: active
+  target: new
+  select: true
+  show: show
+  active: active
+
+- text: Bán chạy nhất
+  class: ''
+  target: sale
+  select: false
+  show: ''
+  active: ''
+
+
+- text: Khuyến mãi
+  class: ''
+  target: rate
+  select: false
+  show: ''
+  active: ''
+

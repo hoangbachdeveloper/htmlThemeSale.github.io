@@ -1,0 +1,20 @@
+- icon: <i class="fab fa-facebook-f"></i>
+  modifier: facebook
+  link: facebook.com
+  label: Facebook
+
+- icon: <i class="fab fa-google"></i>
+  modifier: google
+  link: google.com
+  label: Gmail
+
+- icon: <i class="fab fa-twitter"></i>
+  modifier: twitter
+  link: twitter.com
+  label: Twitter
+
+- icon: <i class="fab fa-instagram"></i>
+  modifier: instagram
+  link: instagram.com
+  label: Instagram
+

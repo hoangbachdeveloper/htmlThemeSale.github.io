@@ -1,0 +1,11 @@
+- text: 2
+  class: sorting__link--2
+
+- text: 3
+  class: sorting__link--3
+
+- text: 4
+  class: sorting__link--4
+
+- text: 5
+  class: sorting__link--5

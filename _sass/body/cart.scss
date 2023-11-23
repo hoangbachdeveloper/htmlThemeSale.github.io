@@ -1,0 +1,130 @@
+.cart {
+    margin-bottom: 30px;
+    td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 25px;
+        font-size: 1.5rem;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 700;
+        @media(max-width: 991.98px) {
+            display: block;
+        }
+    }
+    th {
+        padding: 25px;
+        text-align: center;
+        font-size: 1.7rem;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 700;
+    }
+    img {
+        max-width: 80px;
+        height: auto;
+    }
+    thead {
+        @media(max-width: 991.98px) {
+            display: none;
+        }
+    }
+    td, th {
+        border-bottom-color:$border-straight-color !important ;
+
+    }
+    table {
+        border: 1px solid $border-straight-color;
+    }
+    .table--modify {
+        border: none;
+        td {
+        padding-left: 0;
+        padding-right: 0;
+        display: table-cell;
+        }
+    }
+
+    &__container {
+
+    }
+    &__table {
+        &-title {
+            text-align: left !important ; 
+            font-size: 1.8rem !important;
+        }
+        &-content {
+            text-align: end  !important;
+            font-size: 1.8rem  !important;
+            font-weight: 500 !important;
+        }
+    }
+
+    &__remove {
+        margin: 0 auto;
+        color: $primary-color;
+        display: flex;
+        border-radius: 100%;
+        border: 1px solid $primary-color;
+        font-size: 16px;
+        font-weight: 400;
+        height: 20px;
+        width: 20px;
+        line-height: 17px;
+        text-align: center;
+        transition: 0.3s;
+        text-decoration: none;
+        transition: $transition-time;
+        &:hover {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+        i {
+            margin: auto;
+            font-weight: 900;
+            transition: $transition-time;   
+        }
+
+    }
+    &__button {
+        text-transform: uppercase;
+        &:hover {
+            background-color: $white-color;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+    &__submit {
+        text-align: end  !important;
+    }
+    &__form-component {
+        border: 1px solid $border-straight-color;
+        border-radius: $border-radius;
+        max-width: 65px;
+        margin: 0 auto;
+        outline: none;
+        font-size: 1.6rem;
+        font-family: 'Rubik', sans-serif;
+        text-align: center;
+    }
+    &__form-group {
+        width: 100%;
+        border: 1px solid $border-straight-color;
+        padding: 10px;
+        border-radius: $border-radius;
+        display: flex;
+        @media(max-width: 425px) {
+            flex-direction: column;
+        }
+    }
+    &__form-control {
+       flex: 1;
+       outline: none;
+       border: none;
+       @media(max-width: 425px) {
+            // outline: none;
+            border: 1px solid $border-straight-color;
+            padding: 10px 15px ;
+            margin-bottom: 1rem;
+            border-radius: $border-radius;
+        }
+    }
+}

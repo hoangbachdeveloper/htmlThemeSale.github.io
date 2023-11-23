@@ -1,0 +1,132 @@
+<div class="categories-content__sidebar">
+    <div class="body-home__sidebar">
+        <!-- ACCORDION SIDEBAR START -->
+        <div class="accordion-categories" id="home-accordion-categories">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+            <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+            >
+                <i class="far fa-bars"></i>
+                Danh mục sản phẩm
+            </button>
+            </h2>
+            <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#home-accordion-categories"
+            >
+            <div class="accordion-body">
+                <ul>
+                {% for item in site.data.home-categories %}
+                <li>
+                    <a href="{{item.link}}"> {{item.name}} </a>
+                </li>
+                {% endfor %}
+                <li>
+                    <a href="#">
+                    <span> Tất cả </span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- ACCORDION SIDEBAR END -->
+
+        <div class="body-home__right-sidebar">   
+            <!-- BEST SELLER START -->
+            <div class="right-sidebar__best-seller">
+                <div class="title">
+                    <h2>
+                        Sản phẩm bán chạy nhất
+                    </h2>
+                </div>
+                <div class="best-seller__content">
+                    {% for item in site.data.home-right-sidebar %}
+                    <div class="best-seller__item">
+                        <div class="best-seller__item-img">
+                            <img src="{{item.img_path}}" alt='#'>
+                        </div>
+                        <div class="best-seller__item-content">
+                            <ul class="rate">
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star"></i>
+                                </li>
+                            </ul>
+                            <div class="name">
+                                <h2>
+                                    {{item.name}}
+                                </h2>
+                            </div>
+                            <div class="price">
+                                <h3>
+                                    {{item.price}}vnd
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- BEST SELLER END -->
+        </div>
+
+        <!-- FEEDBACK START -->
+        <div class="body-home__news">
+        <div class="home__news-title">
+            <h2>Phản hồi khách hàng</h2>
+            <div class="home__news-control">
+            <button id="feedback-prev">
+                <i class="fas fa-caret-left"></i>
+            </button>
+            <button class="button--next" id="feedback-next">
+                <i class="fas fa-caret-right"></i>
+            </button>
+            </div>
+        </div>
+        <div class="home__feedback-slide">
+            {% for item in site.data.home-feedback-list %}
+            <div class="home__feedback-item">
+            <div class="home__feedback-item__img">
+                <img src="{{item.img_path}}" alt="home-feedback-item-img" />
+            </div>
+            <div class="home__feedback-item__title">
+                <h2>
+                <a href="{{item.link}}"> {{item.name}} </a>
+                </h2>
+            </div>
+            <div class="home__feedback-item__job">
+                <p>
+                {{item.job}} 
+                </p>
+            </div>
+            <div class="home__feedback-item__desc">
+                <p>{{item.comment}}</p>
+            </div>
+            </div>
+            {% endfor %}
+        </div>
+        </div>
+        <!-- FEEDBACK END -->
+    </div>
+</div>

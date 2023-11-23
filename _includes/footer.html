@@ -1,0 +1,152 @@
+<footer>
+    <div class="footer-wraps">
+        <!-- NAV START -->
+        <nav class="footer-wraps__nav">
+            <div class="container">
+                <div class="row">
+                    <!-- SUBSCRIBE START -->                                                                                                                                                                                                                                          <!-- SUBSCRIBE START -->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="footer-subscribe">
+                            <div class="title">
+                                <h2>
+                                    Theo Dõi:
+                                </h2>
+                            </div>
+                            <div class="list-subscribe">
+                                <ul>
+                                    {% for item in site.data.home-social-network %}
+                                        <li class="list-subscribe__item list-subscribe__item--{{item.modifier}}">
+                                            <a href="{{item.link}}">
+                                                {{item.icon}}
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- SUBSCRIBE END -->
+
+                    <!-- FORM START -->
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label>Đăng ký để nhận khuyến mãi</label>
+                                <div class="form-input">
+                                    <input class="form-control" placeholder="Email của bạn..." required type="email"/>
+                                    <button class="btn btn-fgc btn-fgc--primary" type="submit">
+                                        Đăng ký
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- FORM END -->                                                                                                                                                                                                                                                                 
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+                                        
+        <!-- FOOTER CONTENT START -->
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <!-- LOGO START -->
+                    <div class=" col-md-12 col-lg-3 col-xl-3">
+                        <div class="footer-content__item">
+                            <div class="logo">
+                                <img alt="logo-img" src="assets/images/logo/logo-fgc-dental.png">
+                            </div>
+                            <div class="footer-content__infor">
+                                <p>
+                                    <span>Địa chỉ: </span>
+                                    Số 55, Nhà liền kề Duy Tân, 
+                                    Đường Duy Tân, Phường Hưng Dũng, 
+                                    Tp Vinh, Tỉnh Nghệ An
+                                </p>
+                                <p>
+                                    <span>Email:</span>
+                                    contact@market.com
+                                </p>
+                                <p>
+                                    <span>
+                                        Điện thoại: 
+                                    </span>
+                                    <a href="#">
+                                        0123-456-789
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- LOGO END -->
+
+                    <!-- FOOTER CATEGORIES START -->
+                    <div class="col-sm-6 col-lg-6 col-xl-6">
+                        <div class="footer-content__item footer-content__item--categories">
+                            <div class="title">
+                                <h2>
+                                    Danh mục sản phẩm
+                                </h2>
+                            </div>
+                            <div class="footer-content__categories">
+                                {% for item in site.data.footer-categories limit: 11 %}
+                                    <a href="#">
+                                       <i class="fas fa-caret-right"></i>
+                                       {{item.text}} 
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOOTER CATEGORIES END -->
+
+                    <!-- FOOTER SERVICES START -->
+                    <div class="col-sm-6 col-lg-3 col-xl-3">
+                          <div class="footer-content__item">
+                           <div class="title">
+                                <h2>
+                                    Chính Sách & Bảo mật
+                                </h2>
+                            </div>
+                            <div class="footer-content__categories">
+                                {% for item in site.data.footer-categories offset: 11 %}
+                                    <a href="#">
+                                       <i class="fas fa-caret-right"></i>
+                                       {{item.text}} 
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOOTER SERVICES END -->
+
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER CONTENT END -->
+
+        <!-- FOOTER AUTH START -->
+        <div class="footer-auth">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="footer-auth__text">
+                            <i class="far fa-copyright"></i>
+                            <span>
+                                2019 nha khoa. đã đăng kí bản quyền. được thiết kế bởi FGC
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="footer-auth__icon">
+                            <img src="assets/images/icon/payment.png" alt="pay-ment" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER AUTH END -->
+    </div>
+</footer>

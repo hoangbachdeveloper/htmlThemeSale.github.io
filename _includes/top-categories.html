@@ -1,0 +1,29 @@
+<div class="" id="top-categories">
+    <div class="categories">
+        <div class="categories__title title  ">
+            <h2>
+                Danh mục nổi bật
+            </h2>
+        </div>
+        <div class="container container-modify">
+            <div class="row">
+                {% for item in site.data.top-categories %}
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <div class="categories__item">
+                        <img src="{{item.img_path}}" alt="top-categories">
+                        <span></span>
+                        <div class="categories__text">
+                            <h2>
+                                {{item.text}}
+                            </h2>
+                            <a href="#">
+                                Xem ngay +
+                            </a>
+                        </div>   
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

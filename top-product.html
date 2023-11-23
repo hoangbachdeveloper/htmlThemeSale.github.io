@@ -1,0 +1,65 @@
+--- 
+layout: post
+title: Product
+banner__title: Sản Phẩm Bán Chạy
+permalink: top-product.html
+--- 
+
+<div id="top-product">
+    <div class="product product--page">
+        <div class="container container-modify">
+
+            
+            <div id="product-body" class="product__body ">
+                <div class="product__best-seller">
+                    <div class="product__title title title--modify title--left">
+
+                        <h2 class="title--icon">
+                            Sản phẩm bán chạy
+                        </h2>
+                    </div>
+                    <div class="row">
+                        {% for item in site.data.top-product %}
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="product__item">
+                                <div class="product__item__wraps">
+                                    <div class="product__img">
+                                        <a href="product-details.html" class="product__img__link product__img__link--4by3 product__img__link--16by9">
+                                        <img src="{{item.img_path}}" alt="product">
+                                        </a>
+                                        <div class="product__function">
+                                            <a href="#" title="add to cart">
+                                                <i class="fal fa-shopping-bag"></i>
+                                            </a>
+                                            <a href="#" title="quick view">
+                                                <i class="fal fa-search"></i>
+                                            </a>
+                                            <a href="#" title="add to wish list">
+                                                <i class="fal fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <h3>
+                                            <a href="product-details.html">
+                                                {{item.name}}
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            {{item.price}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% include pagination.html %}
+                </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+</div>

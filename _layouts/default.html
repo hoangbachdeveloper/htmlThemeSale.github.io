@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+    <span id="overlay"></span>
+    {% include header.html %}
+    {{content}}
+    <span id="back-to-top">
+        <i class="fas fa-arrow-alt-to-top"></i>
+    </span>
+    {% include footer.html %}
+    {% include script.html %}
+    
+</body>
+</html>

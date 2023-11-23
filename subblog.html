@@ -1,0 +1,167 @@
+---
+layout: post
+title: Blog
+banner__title: Tin Tức
+permalink: sub-blog.html
+---
+
+
+
+<!-- BLOG BODY START -->
+<div class="blog-content__body">
+    <div class="container">
+        <div class="row">
+            <!-- BLOG LIST START -->
+            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                <div class="blog-content__list">
+                    <ul>
+                        {% for item in site.data.blog-list %}
+                        <li class="blog-content__item">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <a href="blog-details.html" class="blog-content__item-img" >
+                                        <img src="{{item.img_path}}" alt="blog-item-img">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="blog-content__item-body">
+                                        <div class="title">
+                                            <h2>
+                                                <a href="blog-details.html">
+                                                    {{item.name}}
+                                                </a>
+                                            </h2>
+                                            <div class="auth-date">
+                                                <a href="#">
+                                                    {{item.auth}}
+                                                </a>
+                                                ,
+                                                <span>
+                                                    {{item.date}}
+                                                </span>
+                                            </div>
+                                            <div class="description">
+                                                <p>
+                                                    {{item.content}}
+                                                </p>
+                                                <a href="blog-details.html">
+                                                    Đọc tiếp <i class="fal fa-chevron-double-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="content__pagination">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- BLOG LIST END -->
+
+            <!-- BLOG SIDEBAR START -->
+            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                <div class="blog-content__sidebar">
+
+                    <div class="body-home__sidebar">
+                        <!-- NEWS START -->
+                        <div class="body-home__news">
+                        <div class="home__news-title">
+                            <h2>Tin tức mới nhất</h2>
+                            <div class="home__news-control">
+                            <button id="prev-btn">
+                                <i class="fas fa-caret-left"></i>
+                            </button>
+                            <button class="button--next" id="next-btn">
+                                <i class="fas fa-caret-right"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="home__news-slide">
+                            {% for item in site.data.home-news-list %}
+                            <div class="home__news-container">
+                                <div class="home__news-item">
+                                <div class="home__news-item__img">
+                                    <img src="{{item.img_path}}" alt="home-news-item-img" />
+                                </div>
+                                <div class="home__news-item__title">
+                                    <h2>
+                                    <a href="{{item.link}}"> {{item.title}} </a>
+                                    </h2>
+                                </div>
+                                <div class="home__news-item__desc">
+                                    <p>{{item.desc}}</p>
+                                </div>
+                                <div class="home__new-item__read">
+                                    <a href="{{item.link}}">Đọc tiếp</a>
+                                    <i class="far fa-chevron-double-right"></i>
+                                </div>
+                                </div>
+                                <div class="home__news-item">
+                                <div class="home__news-item__img">
+                                    <img src="{{item.img_path}}" alt="home-news-item-img" />
+                                </div>
+                                <div class="home__news-item__title">
+                                    <h2>
+                                    <a href="{{item.link}}"> {{item.title}} </a>
+                                    </h2>
+                                </div>
+                                <div class="home__news-item__desc">
+                                    <p>{{item.desc}}</p>
+                                </div>
+                                <div class="home__new-item__read">
+                                    <a href="{{item.link}}">Đọc tiếp</a>
+                                    <i class="far fa-chevron-double-right"></i>
+                                </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        </div>
+                        <!-- NEWS END -->
+                    </div>
+
+                    <div class="body-home__right-sidebar">
+                    <!-- BANNER START -->
+                    <div class="right-sidebar__banner" style="background: url(assets/images/right-sidebar/background.jpg);">
+                        <img src="assets/images/right-sidebar/piece.png" alt="img" >
+                        <div class="right-sidebar__banner-text">
+                            <h2>
+                                Ưu đãi lớn nhất trong dịp kỷ niệm thành lập công ty
+                            </h2>
+                            <h3>
+                                08/01/2018 - 18/02/2018
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- BANNER END -->
+
+               
+            </div>
+                </div>
+            <!-- BLOG SIDEBAR END -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- BLOG BODY END -->

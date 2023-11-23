@@ -1,0 +1,96 @@
+---
+layout: post
+title: Category
+banner__title: Danh mục
+permalink: sub-categories.html
+---
+
+<!-- CATEGORIES BODY START -->
+<div class="categories-content__body">
+    <div class="container">
+        <div class="row caterogies-reserver">
+            <!-- LEFT SIDEBAR START -->
+            <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+              {% include categories-sidebar.html %}
+            </div>
+            <!-- LIST SIDEBAR END -->
+
+            <!-- LIST PRODUCT START -->
+            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                <div class="categories__container">
+                  
+                    {% include categories-title.html %}
+                  
+                    <div class="categories__container-list">
+                        <div class="row">
+                            {% for item in site.data.categories-list %}
+                            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="categories__container-item">
+                                    <div class="categories-item__img">
+                                        <img src="{{item.img_path}}" alt="categories-item-img">
+                                    </div>
+                                    <div class="categories-item__content">
+                                        <ul>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="name">
+                                            <h2>
+                                                <a href="product-details.html">
+                                                    {{item.name}}
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div class="price">
+                                            {{item.price}}vnd
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content__pagination content__pagination--categories">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">
+                                <span>1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                {% include categories-services.html %}
+
+            </div>
+            <!-- LIST PRODUCT END -->
+        </div>
+    </div>
+</div>
+<!-- CATEGORIES END -->

@@ -1,0 +1,4 @@
+- id: machine-chair
+  status: active
+  show: show
+  aria-labelledby: machine-chair-tab

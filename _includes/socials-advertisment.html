@@ -1,0 +1,14 @@
+<div class="advertiment">
+    <ul>
+        {% for item in site.data.home-social-network %}
+        <li>
+            <span class="advertiment__label">
+                {{item.label}}
+            </span>
+            <a href="{{item.link}}" class="advertiment__item advertiment__item--{{item.modifier}} ">
+                {{item.icon}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
